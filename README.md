@@ -8,4 +8,3 @@ This game was created as a final project to close out and apply what I learned u
  - Change current working derectory to the location of choice
  - Type "git clone" and paste copied URL
  - Press enter and your local clone should be created
- - Make and fun changes you see fit
