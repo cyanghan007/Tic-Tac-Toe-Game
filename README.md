@@ -20,7 +20,7 @@ Goal was to create a 2 player game against another player or comptuer, win or dr
 - JavaScript
 #### **Download Instructions**
  - Fork this repository
- - Copy URl for repository
+ - Copy URL for repository
  - Open git bash
  - Change current working derectory to the location of choice
  - Type "git clone" and paste copied URL
