@@ -7,7 +7,7 @@ I was able to get the game working, 2 players are able to win or draw. Players a
 During the making of this game I ran into many challenges that stumped me along the way. I knew from the get go I wanted to used pictures to place into the tiles over "x's" and "o's". I was able to find free gifs to use but they were extremely small scaled in size. I was able to find a site that allowed me to resize my gifs to a bigger size that sutied that I needed. Another challenges I encountered was not being able to display the winner image for selected character chosen by the player on my winner pop up window. Due to this, it can be hard to know who one the game since it is not stated within the window.
 
 Future goals, I would like to fix the winner display window to show the character selected that wins the game. I would also like to add a sound audio that will play when their is a winner or if their is a draw.
-### **Features used**
+### **Built With**
 - HTML5
 - CSS
 - JavaScript
