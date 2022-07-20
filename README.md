@@ -1,4 +1,6 @@
 # Tic-Tac-Toe-Game
+### **Project Description**
+Goal was to create a 2 player game against another player or comptuer, win or draw state, and a way to contiune playing the game.
 ### **Game Description**
 - Select your character of choice
 - Win the game by getting 3 in a row digonally, vertically, or horizontally
