@@ -26,7 +26,6 @@ Goal was to create a 2 player game against another player or comptuer, win or dr
  - Type "git clone" and paste copied URL
  - Press enter and your local clone should be created
 ### **Credit Links**
-- Great turtorial to reference for a guide: (https://youtu.be/B3pmT7Cpi24)
 - Gifs images where found on this site: (https://itch.io/)
 - Re-sizing  gifs images were done here: (https://ezgif.com/resize)
 ### **Game link**
