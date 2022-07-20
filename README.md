@@ -15,6 +15,6 @@ Future goals, I would like to fix the winner display window to show the characte
  - Type "git clone" and paste copied URL
  - Press enter and your local clone should be created
 ##### **Credit** Links**
-Great turtorial to reference for a guide (https://youtu.be/B3pmT7Cpi24)
-Gifs images where found from this site (https://itch.io/)
-Re-sizing  gifs images were done here (https://ezgif.com/resize)
+- Great turtorial to reference for a guide (https://youtu.be/B3pmT7Cpi24)
+- Gifs images where found from this site (https://itch.io/)
+- Re-sizing  gifs images were done here (https://ezgif.com/resize)
