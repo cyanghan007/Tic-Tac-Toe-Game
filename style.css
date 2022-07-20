@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+*>* {
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+/*background*/
+body {
+    background-color: rgb(54, 54, 54);
+}
+
+.title {
+    color: #dae26a;
+    font-size: 3em;
+}
+
+/*select your chicken*/
+.text {
+    color: #dae26a;
+    font-size: 2em;
+}
+
+/*draw/win pop up message*/
+.text-yellow {
+    color: #dae26a;
+}
+
+/*centering items*/
+.start-game {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*button customization*/
+.primary-btn {
+    border: none;
+    border-radius: 8px;
+    background: #0000FF ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #e9e9e9;
+    margin-top: 2em;
+    font-size: 1.50em;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    background: #B266FF;
+    color: #363636;
+}
+
+/*pointer cursor shows when hovering over images*/
+.start-game .character .img > img{
+    cursor: pointer;
+}
+/*adds hover effect when selecting characters*/
+.start-game .character .img > img:hover {
+    background-color: #00FFFF;
+    border-radius: 20px;
+}
+
+/*hides start game interface*/
+.start-game.hide{
+    display: none;
+}
+
+/*centering all items for gameboard*/
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*tic-tac-toe gameboard*/
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: #e9e9e9;
+    row-gap: 3px;
+    column-gap: 3px;
+    box-shadow: 0px 0px 20px 10px #e9e9e9;
+    
+}
+/*customizes tiles within the gameboard*/
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*if tile block is fill, cursor will not be allowed to select*/
+.block.x, .block.x2,
+.block.y, .block.y2{
+    cursor: not-allowed;
+}
+
+/*:not(.x) removes hover effect if spot is picked*/
+.board.x .block:not(.x):not(.y):hover{
+    background: url('/images/white_chicken.gif') #dae26a no-repeat;
+    opacity: 0.4;
+}
+
+.board.x2 .block:not(.x2):not(.y2):hover{
+    background: url('/images/White_strut.gif') #dae26a no-repeat;
+    opacity: 0.4;
+}
+
+.board.y .block:not(.y):not(.x):hover{
+    background: url('/images/Brown_strut.gif') #228B22 no-repeat;
+    opacity: 0.4;
+}
+
+.board.y2 .block:not(.y2):not(.x2):hover{
+    background: url('/images/Brown_chicken.gif') #228B22 no-repeat;
+    opacity: 0.4;
+}
+
+/*x is equal to white chicken, x2 is equal to white chicken strut
+/* y is equal to brown chicken strut and y2 is equal to brown chicken*/
+.block.x{
+    background: url('/images/white_chicken.gif') #dae26a no-repeat;
+    background-size: cover;
+}
+
+.block.x2{
+    background: url('/images/White_strut.gif') #dae26a no-repeat;
+    background-size: cover;
+}
+
+.block.y{
+    background: url('/images/Brown_strut.gif') #228B22  no-repeat;
+    background-size: cover;
+}
+
+.block.y2{
+    background: url('/images/Brown_chicken.gif') #228B22 no-repeat;
+    background-size: cover;
+}
+
+/*Draw message window setup*/
+/*including all 3 allows all of them to be centered*/
+.start-game, .draw-msg, .winner-msg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 49, 49, 0.938);
+}
+
+/*display none will hide these pop ups*/
+.draw-msg, .winner-msg{
+    display: none;
+}
+
+/*class setup that hides and shows winner message pop up window*/
+.draw-msg.show, .winner-msg.show{
+    display: flex;
+}
+
+/*class for image target background change*/
+.start-game .character .img > img.selected{
+    background-color: #816df2;
+    border: 2px solid #e9e9e9;
+    border-radius: 20px;
+}
+
+.win{
+    background-color: #FFA500!important;
+}

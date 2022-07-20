@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to stylesheet css-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tic-Tac-Toe></title>
+</head>
+<body>
+
+    <!--start game setup window-->
+    <div class="start-game"> <!--hide is being called from CSS, allows for main interface to be hidden-->
+        <h1 class="title">Tic-Tac-Toe</h1>
+        <h2 class="text">Select Your Chicken</h2>
+            <div class="character">
+                <div class="img">
+                    <img src="/images/white_chicken.gif" class="id" data-id="x" alt="">
+                    <img src="/images/Brown_strut.gif" class="id" data-id="y" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/White_strut.gif" class="id" data-id="x2" alt="">
+                    <img src="/images/Brown_chicken.gif" class="id" data-id="y2" alt="">
+                </div>
+            </div>
+
+        <button class="primary-btn" id="startBtn">Start Game</button>
+    </div>
+
+    <!--Game board setup-->
+    <div class="container">
+        <div class="board" id="board">
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+            <div class="block" tile></div>
+        </div>
+    </div>
+
+    <!-- Draw window pop up-->
+    <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-yellow">Draw, no chicken dinner!</h1>
+        </div>
+        <button id="drawBtn" class="primary-btn">Play Again</button>
+    </div>
+
+    <!-- Winner window pop up-->
+    <div class="winner-msg">
+        <h1 class="text-yellow">Winner Winner Chicken Dinner!</h1>
+        <button id="restartBtn" class="primary-btn">Play Again</button>  
+    </div>
+
+    <audio id="winAudio" src="/audio/mixkit-video-game-win-2016.wav"></audio>
+    
+    <script src="/game.js"></script>
+</body>
+</html>
